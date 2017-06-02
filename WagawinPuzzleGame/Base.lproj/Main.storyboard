@@ -26,15 +26,29 @@
                                 <rect key="frame" x="20" y="12" width="573" height="351"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k24-pj-OFf" customClass="WPGCountDownView">
+                                <rect key="frame" x="186.5" y="67" width="240" height="240"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="NCz-eU-UQn"/>
+                                    <constraint firstAttribute="width" constant="240" id="hvz-D1-Xqm"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="THx-7U-6jN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="12" id="6Lb-Xr-4QY"/>
                             <constraint firstItem="THx-7U-6jN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Abt-qK-WeH"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="THx-7U-6jN" secondAttribute="bottom" constant="12" id="K26-rn-3MP"/>
+                            <constraint firstItem="k24-pj-OFf" firstAttribute="centerY" secondItem="THx-7U-6jN" secondAttribute="centerY" id="UHX-Mw-6XJ"/>
+                            <constraint firstItem="k24-pj-OFf" firstAttribute="centerX" secondItem="THx-7U-6jN" secondAttribute="centerX" id="gXc-pM-3S5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="THx-7U-6jN" secondAttribute="trailing" constant="54" id="jPJ-LO-Lrv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countDownView" destination="k24-pj-OFf" id="VnC-86-sRV"/>
+                        <outlet property="puzzleView" destination="THx-7U-6jN" id="MZh-kp-IpB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

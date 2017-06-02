@@ -14,6 +14,7 @@
 		1DADBE791EE13ABF0071D552 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DADBE781EE13ABF0071D552 /* Assets.xcassets */; };
 		1DADBE7C1EE13ABF0071D552 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DADBE7A1EE13ABF0071D552 /* LaunchScreen.storyboard */; };
 		1DE8B4911EE14C8C00885EE0 /* WPGItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE8B4901EE14C8C00885EE0 /* WPGItemView.m */; };
+		1DE8B4941EE1930E00885EE0 /* WPGCountDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE8B4931EE1930E00885EE0 /* WPGCountDownView.m */; };
 		1DE99DA21EE14360000A206D /* WPGPuzzleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE99DA11EE14360000A206D /* WPGPuzzleView.m */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,8 @@
 		1DADBE7D1EE13ABF0071D552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DE8B48F1EE14C8C00885EE0 /* WPGItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPGItemView.h; sourceTree = "<group>"; };
 		1DE8B4901EE14C8C00885EE0 /* WPGItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPGItemView.m; sourceTree = "<group>"; };
+		1DE8B4921EE1930E00885EE0 /* WPGCountDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPGCountDownView.h; sourceTree = "<group>"; };
+		1DE8B4931EE1930E00885EE0 /* WPGCountDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPGCountDownView.m; sourceTree = "<group>"; };
 		1DE99DA01EE14360000A206D /* WPGPuzzleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPGPuzzleView.h; sourceTree = "<group>"; };
 		1DE99DA11EE14360000A206D /* WPGPuzzleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPGPuzzleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,15 +71,13 @@
 				1DADBE701EE13ABF0071D552 /* AppDelegate.m */,
 				1DADBE721EE13ABF0071D552 /* WPGViewController.h */,
 				1DADBE731EE13ABF0071D552 /* WPGViewController.m */,
-				1DADBE751EE13ABF0071D552 /* Main.storyboard */,
-				1DADBE781EE13ABF0071D552 /* Assets.xcassets */,
-				1DADBE7A1EE13ABF0071D552 /* LaunchScreen.storyboard */,
-				1DADBE7D1EE13ABF0071D552 /* Info.plist */,
 				1DADBE6C1EE13ABF0071D552 /* Supporting Files */,
 				1DE99DA01EE14360000A206D /* WPGPuzzleView.h */,
 				1DE99DA11EE14360000A206D /* WPGPuzzleView.m */,
 				1DE8B48F1EE14C8C00885EE0 /* WPGItemView.h */,
 				1DE8B4901EE14C8C00885EE0 /* WPGItemView.m */,
+				1DE8B4921EE1930E00885EE0 /* WPGCountDownView.h */,
+				1DE8B4931EE1930E00885EE0 /* WPGCountDownView.m */,
 			);
 			path = WagawinPuzzleGame;
 			sourceTree = "<group>";
@@ -84,6 +85,10 @@
 		1DADBE6C1EE13ABF0071D552 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1DADBE751EE13ABF0071D552 /* Main.storyboard */,
+				1DADBE781EE13ABF0071D552 /* Assets.xcassets */,
+				1DADBE7A1EE13ABF0071D552 /* LaunchScreen.storyboard */,
+				1DADBE7D1EE13ABF0071D552 /* Info.plist */,
 				1DADBE6D1EE13ABF0071D552 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -162,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DADBE741EE13ABF0071D552 /* WPGViewController.m in Sources */,
+				1DE8B4941EE1930E00885EE0 /* WPGCountDownView.m in Sources */,
 				1DE99DA21EE14360000A206D /* WPGPuzzleView.m in Sources */,
 				1DE8B4911EE14C8C00885EE0 /* WPGItemView.m in Sources */,
 				1DADBE711EE13ABF0071D552 /* AppDelegate.m in Sources */,

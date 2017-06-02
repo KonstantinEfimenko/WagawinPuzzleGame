@@ -7,17 +7,16 @@
 //
 
 #import "WPGItemView.h"
+#import "WPGCountDownView.h"
 
 @implementation WPGItemView
 {
-    //CGPoint originalPosition;
     CGPoint touchOffset;
 }
 
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [self.superview bringSubviewToFront:self];
-    //originalPosition = self.center;
     CGPoint position = [[touches anyObject] locationInView: self.superview];
     touchOffset = CGPointMake(self.center.x-position.x,self.center.y-position.y);
 }
@@ -39,7 +38,7 @@
 
 -(void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     CGPoint position = [[touches anyObject] locationInView: self.superview];
-    if(_delegate){
+    if(_delegate && [_delegate respondsToSelector:@selector(itemView:wasDroppedInPoint:)]){
         [_delegate itemView:self wasDroppedInPoint:position];
     }
 }

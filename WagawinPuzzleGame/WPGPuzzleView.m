@@ -34,8 +34,6 @@
             [self makeItemForHorizontalPosition:x verticalPosition:y];
         }
     }
-    
-    [self shuffle];
 }
 
 

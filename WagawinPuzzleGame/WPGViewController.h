@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WPGCountDownView.h"
 
-@interface WPGViewController : UIViewController
+@interface WPGViewController : UIViewController <WPGCountDownViewDelegate>
 
 
 @end

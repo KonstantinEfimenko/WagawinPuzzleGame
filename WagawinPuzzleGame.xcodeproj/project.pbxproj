@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DADBE6E1EE13ABF0071D552 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DADBE6D1EE13ABF0071D552 /* main.m */; };
+		1DADBE711EE13ABF0071D552 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DADBE701EE13ABF0071D552 /* AppDelegate.m */; };
+		1DADBE741EE13ABF0071D552 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DADBE731EE13ABF0071D552 /* ViewController.m */; };
+		1DADBE771EE13ABF0071D552 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DADBE751EE13ABF0071D552 /* Main.storyboard */; };
+		1DADBE791EE13ABF0071D552 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DADBE781EE13ABF0071D552 /* Assets.xcassets */; };
+		1DADBE7C1EE13ABF0071D552 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DADBE7A1EE13ABF0071D552 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1DADBE691EE13ABF0071D552 /* WagawinPuzzleGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WagawinPuzzleGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DADBE6D1EE13ABF0071D552 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1DADBE6F1EE13ABF0071D552 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1DADBE701EE13ABF0071D552 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1DADBE721EE13ABF0071D552 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1DADBE731EE13ABF0071D552 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1DADBE761EE13ABF0071D552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1DADBE781EE13ABF0071D552 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1DADBE7B1EE13ABF0071D552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1DADBE7D1EE13ABF0071D552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DADBE661EE13ABF0071D552 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DADBE601EE13ABF0071D552 = {
+			isa = PBXGroup;
+			children = (
+				1DADBE6B1EE13ABF0071D552 /* WagawinPuzzleGame */,
+				1DADBE6A1EE13ABF0071D552 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1DADBE6A1EE13ABF0071D552 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DADBE691EE13ABF0071D552 /* WagawinPuzzleGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1DADBE6B1EE13ABF0071D552 /* WagawinPuzzleGame */ = {
+			isa = PBXGroup;
+			children = (
+				1DADBE6F1EE13ABF0071D552 /* AppDelegate.h */,
+				1DADBE701EE13ABF0071D552 /* AppDelegate.m */,
+				1DADBE721EE13ABF0071D552 /* ViewController.h */,
+				1DADBE731EE13ABF0071D552 /* ViewController.m */,
+				1DADBE751EE13ABF0071D552 /* Main.storyboard */,
+				1DADBE781EE13ABF0071D552 /* Assets.xcassets */,
+				1DADBE7A1EE13ABF0071D552 /* LaunchScreen.storyboard */,
+				1DADBE7D1EE13ABF0071D552 /* Info.plist */,
+				1DADBE6C1EE13ABF0071D552 /* Supporting Files */,
+			);
+			path = WagawinPuzzleGame;
+			sourceTree = "<group>";
+		};
+		1DADBE6C1EE13ABF0071D552 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1DADBE6D1EE13ABF0071D552 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1DADBE681EE13ABF0071D552 /* WagawinPuzzleGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DADBE801EE13ABF0071D552 /* Build configuration list for PBXNativeTarget "WagawinPuzzleGame" */;
+			buildPhases = (
+				1DADBE651EE13ABF0071D552 /* Sources */,
+				1DADBE661EE13ABF0071D552 /* Frameworks */,
+				1DADBE671EE13ABF0071D552 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WagawinPuzzleGame;
+			productName = WagawinPuzzleGame;
+			productReference = 1DADBE691EE13ABF0071D552 /* WagawinPuzzleGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1DADBE611EE13ABF0071D552 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Konstantin Efimenko";
+				TargetAttributes = {
+					1DADBE681EE13ABF0071D552 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = ZQ4YCF33U4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1DADBE641EE13ABF0071D552 /* Build configuration list for PBXProject "WagawinPuzzleGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1DADBE601EE13ABF0071D552;
+			productRefGroup = 1DADBE6A1EE13ABF0071D552 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1DADBE681EE13ABF0071D552 /* WagawinPuzzleGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DADBE671EE13ABF0071D552 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DADBE7C1EE13ABF0071D552 /* LaunchScreen.storyboard in Resources */,
+				1DADBE791EE13ABF0071D552 /* Assets.xcassets in Resources */,
+				1DADBE771EE13ABF0071D552 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DADBE651EE13ABF0071D552 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DADBE741EE13ABF0071D552 /* ViewController.m in Sources */,
+				1DADBE711EE13ABF0071D552 /* AppDelegate.m in Sources */,
+				1DADBE6E1EE13ABF0071D552 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1DADBE751EE13ABF0071D552 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DADBE761EE13ABF0071D552 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1DADBE7A1EE13ABF0071D552 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DADBE7B1EE13ABF0071D552 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DADBE7E1EE13ABF0071D552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1DADBE7F1EE13ABF0071D552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1DADBE811EE13ABF0071D552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZQ4YCF33U4;
+				INFOPLIST_FILE = WagawinPuzzleGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iefymenko.WagawinPuzzleGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1DADBE821EE13ABF0071D552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZQ4YCF33U4;
+				INFOPLIST_FILE = WagawinPuzzleGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iefymenko.WagawinPuzzleGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DADBE641EE13ABF0071D552 /* Build configuration list for PBXProject "WagawinPuzzleGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DADBE7E1EE13ABF0071D552 /* Debug */,
+				1DADBE7F1EE13ABF0071D552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DADBE801EE13ABF0071D552 /* Build configuration list for PBXNativeTarget "WagawinPuzzleGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DADBE811EE13ABF0071D552 /* Debug */,
+				1DADBE821EE13ABF0071D552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1DADBE611EE13ABF0071D552 /* Project object */;
+}

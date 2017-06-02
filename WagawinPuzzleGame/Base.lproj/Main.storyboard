@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="THx-7U-6jN" customClass="WPGPuzzleView">
-                                <rect key="frame" x="20" y="12" width="573" height="351"/>
+                                <rect key="frame" x="20" y="20" width="573" height="335"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k24-pj-OFf" customClass="WPGCountDownView">
@@ -34,19 +34,30 @@
                                     <constraint firstAttribute="width" constant="240" id="hvz-D1-Xqm"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Emu-rI-2yP" customClass="WPGCounterView">
+                                <rect key="frame" x="619" y="40" width="24" height="323"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="HFB-ij-8Y6"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="THx-7U-6jN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="12" id="6Lb-Xr-4QY"/>
+                            <constraint firstItem="Emu-rI-2yP" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="-4" id="1Q2-oW-6tm"/>
+                            <constraint firstItem="THx-7U-6jN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="6Lb-Xr-4QY"/>
                             <constraint firstItem="THx-7U-6jN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Abt-qK-WeH"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="THx-7U-6jN" secondAttribute="bottom" constant="12" id="K26-rn-3MP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="THx-7U-6jN" secondAttribute="bottom" constant="20" id="K26-rn-3MP"/>
                             <constraint firstItem="k24-pj-OFf" firstAttribute="centerY" secondItem="THx-7U-6jN" secondAttribute="centerY" id="UHX-Mw-6XJ"/>
                             <constraint firstItem="k24-pj-OFf" firstAttribute="centerX" secondItem="THx-7U-6jN" secondAttribute="centerX" id="gXc-pM-3S5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="THx-7U-6jN" secondAttribute="trailing" constant="54" id="jPJ-LO-Lrv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Emu-rI-2yP" secondAttribute="bottom" constant="12" id="vsL-eY-v5e"/>
+                            <constraint firstItem="Emu-rI-2yP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="xrb-j9-WRc"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="countDownView" destination="k24-pj-OFf" id="VnC-86-sRV"/>
+                        <outlet property="counterView" destination="Emu-rI-2yP" id="Xsg-IQ-89C"/>
                         <outlet property="puzzleView" destination="THx-7U-6jN" id="MZh-kp-IpB"/>
                     </connections>
                 </viewController>

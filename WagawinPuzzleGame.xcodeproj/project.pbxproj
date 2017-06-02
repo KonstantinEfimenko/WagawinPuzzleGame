@@ -15,6 +15,7 @@
 		1DADBE7C1EE13ABF0071D552 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DADBE7A1EE13ABF0071D552 /* LaunchScreen.storyboard */; };
 		1DE8B4911EE14C8C00885EE0 /* WPGItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE8B4901EE14C8C00885EE0 /* WPGItemView.m */; };
 		1DE8B4941EE1930E00885EE0 /* WPGCountDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE8B4931EE1930E00885EE0 /* WPGCountDownView.m */; };
+		1DE8B4971EE1F2C900885EE0 /* WPGCounterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE8B4961EE1F2C900885EE0 /* WPGCounterView.m */; };
 		1DE99DA21EE14360000A206D /* WPGPuzzleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE99DA11EE14360000A206D /* WPGPuzzleView.m */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,8 @@
 		1DE8B4901EE14C8C00885EE0 /* WPGItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPGItemView.m; sourceTree = "<group>"; };
 		1DE8B4921EE1930E00885EE0 /* WPGCountDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPGCountDownView.h; sourceTree = "<group>"; };
 		1DE8B4931EE1930E00885EE0 /* WPGCountDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPGCountDownView.m; sourceTree = "<group>"; };
+		1DE8B4951EE1F2C900885EE0 /* WPGCounterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPGCounterView.h; sourceTree = "<group>"; };
+		1DE8B4961EE1F2C900885EE0 /* WPGCounterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPGCounterView.m; sourceTree = "<group>"; };
 		1DE99DA01EE14360000A206D /* WPGPuzzleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPGPuzzleView.h; sourceTree = "<group>"; };
 		1DE99DA11EE14360000A206D /* WPGPuzzleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPGPuzzleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +81,8 @@
 				1DE8B4901EE14C8C00885EE0 /* WPGItemView.m */,
 				1DE8B4921EE1930E00885EE0 /* WPGCountDownView.h */,
 				1DE8B4931EE1930E00885EE0 /* WPGCountDownView.m */,
+				1DE8B4951EE1F2C900885EE0 /* WPGCounterView.h */,
+				1DE8B4961EE1F2C900885EE0 /* WPGCounterView.m */,
 			);
 			path = WagawinPuzzleGame;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 				1DE8B4941EE1930E00885EE0 /* WPGCountDownView.m in Sources */,
 				1DE99DA21EE14360000A206D /* WPGPuzzleView.m in Sources */,
 				1DE8B4911EE14C8C00885EE0 /* WPGItemView.m in Sources */,
+				1DE8B4971EE1F2C900885EE0 /* WPGCounterView.m in Sources */,
 				1DADBE711EE13ABF0071D552 /* AppDelegate.m in Sources */,
 				1DADBE6E1EE13ABF0071D552 /* main.m in Sources */,
 			);

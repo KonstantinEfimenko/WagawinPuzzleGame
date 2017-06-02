@@ -9,6 +9,7 @@
 #import "WPGViewController.h"
 #import "WPGPuzzleView.h"
 
+
 @interface WPGViewController ()
 
 @end
@@ -17,12 +18,14 @@
 {
     __weak IBOutlet WPGPuzzleView *puzzleView;
     __weak IBOutlet WPGCountDownView *countDownView;
+    __weak IBOutlet WPGCounterView *counterView;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     countDownView.delegate = self;
     [countDownView startCountDown];
+    counterView.delegate = self;
 }
 
 
@@ -35,6 +38,13 @@
 
 - (void)onCountDownReachEnd{
     [puzzleView shuffle];
+    [counterView startCounter];
+}
+
+#pragma WPGCounterViewDelegate
+
+- (void)onCounterReachEnd{
+    //TODO: show relaunch button
 }
 
 @end

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WPGPuzzleView.h
 //  WagawinPuzzleGame
 //
 //  Created by Konstantin Efimenko on 6/2/17.
@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WPGItemView.h"
 
-@interface ViewController : UIViewController
+@interface WPGPuzzleView : UIView <WPGItemViewDelegate>
 
+- (void)shuffle;
 
 @end
-

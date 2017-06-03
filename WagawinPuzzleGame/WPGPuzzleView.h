@@ -9,7 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "WPGItemView.h"
 
+@protocol WPGPuzzleViewDelegate <NSObject>
+
+- (void)onPuzzleComplete;
+
+@end
+
 @interface WPGPuzzleView : UIView <WPGItemViewDelegate>
+
+@property (weak) id<WPGPuzzleViewDelegate> delegate;
 
 - (void)shuffle;
 

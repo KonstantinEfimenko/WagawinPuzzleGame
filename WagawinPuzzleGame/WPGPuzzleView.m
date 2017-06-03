@@ -48,7 +48,6 @@
     itemImageView.frame = itemFrame;
     itemImageView.userInteractionEnabled = YES;
     itemImageView.delegate = self;
-    [self addSubview:itemImageView];
     [rightOrderItems addObject:itemImageView];
     itemImageView.originalPosition = itemImageView.center;
 }
@@ -90,6 +89,7 @@
         CGPoint itemViewCenter = itemView.currentPosition;
         itemView.currentPosition = itemHere.currentPosition;
         itemHere.currentPosition = itemViewCenter;
+        [self checkIfPuzzleComplete];
     }else{
         [UIView animateWithDuration:0.1 animations:^{
             itemView.center = itemView.currentPosition;
@@ -107,6 +107,17 @@
         }		
     }
     return nil;
+}
+
+
+- (void)checkIfPuzzleComplete{
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"originalPosition!=currentPosition"];
+    NSArray*itemsWithWrongPosition = [rightOrderItems filteredArrayUsingPredicate:predicate];
+    if(itemsWithWrongPosition.count==0){
+        if(_delegate && [_delegate respondsToSelector:@selector(onPuzzleComplete)]){
+            [_delegate onPuzzleComplete];
+        }
+    }
 }
 
 @end

@@ -7,8 +7,6 @@
 //
 
 #import "WPGViewController.h"
-#import "WPGPuzzleView.h"
-
 
 @interface WPGViewController ()
 
@@ -23,6 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    puzzleView.delegate = self;
     countDownView.delegate = self;
     [countDownView startCountDown];
     counterView.delegate = self;
@@ -34,17 +33,33 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma WPGCountDownViewDelegate
+
+- (void)showMessage:(NSString*)message{
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:message preferredStyle:UIAlertControllerStyleAlert];
+    [alert addAction:[UIAlertAction actionWithTitle:@"New game" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action){
+        [countDownView startCountDown];
+    }]];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+#pragma mark WPGCountDownViewDelegate
 
 - (void)onCountDownReachEnd{
     [puzzleView shuffle];
     [counterView startCounter];
 }
 
-#pragma WPGCounterViewDelegate
+#pragma mark WPGCounterViewDelegate
 
 - (void)onCounterReachEnd{
-    //TODO: show relaunch button
+    [self showMessage:@"Game over!"];
+}
+
+#pragma mark WPGPuzzleViewDelegate
+
+- (void)onPuzzleComplete{
+    [counterView stopCounter];
+    [self showMessage:@"You won!"];
 }
 
 @end

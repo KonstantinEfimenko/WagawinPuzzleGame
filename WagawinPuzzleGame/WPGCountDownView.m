@@ -36,6 +36,7 @@
             textLabel.transform = CGAffineTransformScale(textLabel.transform, 0.2, 0.2);
             [self animateNextNumber];
         }else{
+            textLabel.text = @"";
             [self setHidden:YES];
             if(_delegate && [_delegate respondsToSelector:@selector(onCountDownReachEnd)]){
                 [_delegate onCountDownReachEnd];

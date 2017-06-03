@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "WPGCountDownView.h"
 #import "WPGCounterView.h"
+#import "WPGPuzzleView.h"
 
-@interface WPGViewController : UIViewController <WPGCountDownViewDelegate, WPGCounterViewDelegate>
+@interface WPGViewController : UIViewController <WPGCountDownViewDelegate, WPGCounterViewDelegate, WPGPuzzleViewDelegate>
 
 
 @end

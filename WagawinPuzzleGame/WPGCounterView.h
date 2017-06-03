@@ -20,4 +20,6 @@
 
 - (void)startCounter;
 
+- (void)stopCounter;
+
 @end

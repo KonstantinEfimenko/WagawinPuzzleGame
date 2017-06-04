@@ -19,6 +19,8 @@
 
 @property (weak) id<WPGPuzzleViewDelegate> delegate;
 
+@property (weak) UIImage *originalImage;
+
 - (void)shuffle;
 
 @end

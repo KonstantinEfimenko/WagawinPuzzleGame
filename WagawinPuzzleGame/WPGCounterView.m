@@ -8,24 +8,37 @@
 
 #import "WPGCounterView.h"
 
-#define SECONDS_FOR_GAME 30
+#define SECONDS_FOR_GAME 21
+#define INITIAL_DELAY 2.0
 #define FILLER_INDENT 3
-#define COUNTER_COLOR [UIColor colorWithRed:154.0/255.0 green:181.0/255.0 blue:237.0/255.0 alpha:1.0]
+#define COUNTER_COLOR [UIColor colorWithRed:119.0/255.0 green:143.0/255.0 blue:213.0/255.0 alpha:1.0]
 
 @implementation WPGCounterView
 {
     UIView *filler;
     NSTimer *countDownTimer;
+    NSTimer *initialDelayTimer;
     UILabel *countDownLabel;
     NSInteger countDownValue;
 }
+
 
 - (void)drawRect:(CGRect)rect {
     self.layer.borderWidth = 1.0;
     self.layer.borderColor = COUNTER_COLOR.CGColor;
 }
 
+
 - (void)startCounter{
+    initialDelayTimer = [NSTimer scheduledTimerWithTimeInterval:INITIAL_DELAY
+                                                         target:self
+                                                       selector:@selector(onInitialDelayEnded)
+                                                       userInfo:nil
+                                                        repeats:NO];
+}
+
+
+- (void)onInitialDelayEnded{
     [self startFiller];
     [self startCountDown];
 }
@@ -35,6 +48,7 @@
     CFTimeInterval pausedTime = [filler.layer convertTime:CACurrentMediaTime() fromLayer:nil];
     filler.layer.speed = 0.0;
     filler.layer.timeOffset = pausedTime;
+    [initialDelayTimer invalidate];
     [countDownTimer invalidate];
     [countDownLabel removeFromSuperview];
     [filler removeFromSuperview];
@@ -76,7 +90,7 @@
 
 
 - (void)changeCountDownValue{
-    countDownLabel.text = [NSString stringWithFormat:@"%ld",(long)countDownValue--];
+    countDownLabel.text = [NSString stringWithFormat:@"%ld",(long)--countDownValue];
 }
 
 @end

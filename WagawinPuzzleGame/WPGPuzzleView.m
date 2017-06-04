@@ -15,7 +15,7 @@
 {
     CGFloat itemWidth;
     CGFloat itemHeight;
-    UIImage *originalImage;
+    
     NSMutableArray *rightOrderItems;
     CGPoint originalPosition;
     CGPoint touchOffset;
@@ -24,8 +24,10 @@
 
 
 - (void)drawRect:(CGRect)rect {
+    if(!_originalImage){
+        return;
+    }
     rightOrderItems = [[NSMutableArray alloc] init];
-    originalImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://s3-eu-west-1.amazonaws.com/wagawin-ad-platform/media/testmode/banner-landscape.jpg"]]];
     itemWidth = rect.size.width/HORIZONTAL_ITEMS_COUNT;
     itemHeight = rect.size.height/VERTICAL_ITEMS_COUNT;
     
@@ -38,8 +40,8 @@
 
 
 - (void)makeItemForHorizontalPosition:(NSInteger)x verticalPosition:(NSInteger)y{
-    CGRect frame = CGRectMake(originalImage.size.width/HORIZONTAL_ITEMS_COUNT*x, originalImage.size.height/VERTICAL_ITEMS_COUNT*y, originalImage.size.width/HORIZONTAL_ITEMS_COUNT, originalImage.size.height/VERTICAL_ITEMS_COUNT);
-    CGImageRef itemImageRef = CGImageCreateWithImageInRect(originalImage.CGImage, frame);
+    CGRect frame = CGRectMake(_originalImage.size.width/HORIZONTAL_ITEMS_COUNT*x, _originalImage.size.height/VERTICAL_ITEMS_COUNT*y, _originalImage.size.width/HORIZONTAL_ITEMS_COUNT, _originalImage.size.height/VERTICAL_ITEMS_COUNT);
+    CGImageRef itemImageRef = CGImageCreateWithImageInRect(_originalImage.CGImage, frame);
     UIImage *itemImage = [UIImage imageWithCGImage:itemImageRef];
     
     CGRect itemFrame =  CGRectMake(itemWidth*x, itemHeight*y, itemWidth, itemHeight);
